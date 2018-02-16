@@ -28,4 +28,3 @@
 	+ /src/php 是為了統一更動navbar、carousel、footer
 
 + 打包的css檔、js檔都暫時丟入/src了
-
