@@ -7,6 +7,7 @@
 + 繼續調整背景或找背景顏色讓他們不會太過奇怪
 + 還有每個網頁內容跟carousel的距離我會調整
 + 加入javascript控制submenu與subpage的對應
++ 暫時還不知道怎麼調整submenu歪一邊的問題
 
 
 整個repo結構為
@@ -26,5 +27,5 @@
 + navbar、carousel、footer在/subpage/unit裡
 	+ /src/php 是為了統一更動navbar、carousel、footer
 
-+ 打包的css檔、js檔都暫時丟入裡面了
++ 打包的css檔、js檔都暫時丟入/src了
 
