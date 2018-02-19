@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<?php include('src/php/navbar-carousel.php'); ?>
+<?php include('src/php/navbar-carousel-fluid.php'); ?>
 
 <?php include('subpage/Index.html'); ?>
 

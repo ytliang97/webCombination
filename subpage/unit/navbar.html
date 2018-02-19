@@ -1,136 +1,159 @@
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php">NTCU CSIE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Big Brand -->
+<div class="jumbotron-brand jumbotron-fluid">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="News.php" id="navbarNews">
-                    系所公告
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarNews">
-                    <todo-item v-for="item in NewsList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item\">
-                <a class="nav-link" href="Introduce.php" id="navbarIntroduce">
-                    系所簡介
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarIntroduce">
-                    <todo-item v-for="item in IntroduceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Course.php" id="navbarCourse">
-                    課程資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarCourse">
-                    <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Enrollment.php" id="navbarEnrollment">
-                    招生資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarEnrollment">
-                    <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Download.php" id="navbarDownload">
-                    法令/表單
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarDownload">
-                    <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Student.php" id="navbarStudent">
-                    學生資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarStudent">
-                    <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Source.php" id="navbarResource">
-                    網路資源
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarResource">
-                    <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.ntcu.edu.tw/cs/2012/ieet.html">
-                    IEET
-                </a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div><!--.collapse navbar-collapse-->
-    <script>
-        Vue.component('todo-item', {
-            props: ['todo'],
-            template: '<a class="dropdown-item" href="#">{{ todo.navTitle }}</a>'
-        })
-        new Vue({
-            el: '#navbarSupportedContent',
-            data: {
-                NewsList: [
-                    { id: 0, navTitle: '活動與演講'},
-                    { id: 0, navTitle: '徵才訊息'},
-                    { id: 0, navTitle: '招生訊息'},
-                    { id: 0, navTitle: '獎學金訊息'},
-                    { id: 0, navTitle: '其他訊息'}
-                ],
-                IntroduceList: [
-                    { id: 0, navTitle: '系所歷史' },
-                    { id: 0, navTitle: '成員介紹' },
-                    { id: 0, navTitle: '榮譽獎項' },
-                    { id: 0, navTitle: '實驗室' },
-                    { id: 0, navTitle: '未來發展' },
-                    { id: 0, navTitle: '系所位置' }
-                ],
-                CourseList: [
-                    { id: 0, navTitle: '學士班課程架構' },
-                    { id: 0, navTitle: '碩士班課程架構' }
-                ],
-                EnrollmentList: [
-                    { id: 0, navTitle: '學士班' },
-                    { id: 0, navTitle: '碩士班' },
-                    { id: 0, navTitle: '中國學生' },
-                    { id: 0, navTitle: '國際交換生' },
-                    { id: 0, navTitle: '常見問題' }
-                ],
-                DownloadList: [
-                    { id: 0, navTitle: '作業程序' },
-                    { id: 0, navTitle: '教師專用' },
-                    { id: 0, navTitle: '學生相關' },
-                    { id: 0, navTitle: '其他表單' }
-                ],
-                StudentList: [
-                    { id: 0, navTitle: '學生論文' },
-                    { id: 0, navTitle: '系學會' },
-                    { id: 0, navTitle: '獎助學金' },
-                    { id: 0, navTitle: '證照成果' },
-                    { id: 0, navTitle: '系友專區' }
-                ],
-                ResourceList: [
-                    { id: 0, navTitle: '校內資源' },
-                    { id: 0, navTitle: '校外資源' },
-                    { id: 0, navTitle: '相關組織' },
-                    { id: 0, navTitle: '學術網路' },
-                    { id: 0, navTitle: '其他資源' }
-                ]
-            }
-        })
-    </script>
-</nav>
+    <!-- top nav -->
+    <div class="float-right">
+        <a href="#">回首頁 </a>|
+        <a href="#">交通資訊 </a>|
+        <a href="#">本系位置圖 </a>|
+        <a href="#">聯絡我們 </a>|
+        <a href="#">English&nbsp</a>
+    </div>
+    <!-- /. top nav -->
+
+    <div class="container">
+        <h1 class="text-hide" style="background-image: url('https://assets.burberry.com/is/image/Burberryltd/5ccadf824b117105b0fdc6436eeee73be375fb22.jpg'); width: 50px; height: 50px;">logo</h1>
+        <h1>國立臺中教育大學 資訊工程學系</h1>
+        <p class="lead">誠摯歡迎你加入溫暖的大家庭</p>
+    </div>
+    <!-- underside Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.php">NTCU CSIE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="News.php" id="navbarNews">
+                        系所公告
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarNews">
+                        <todo-item v-for="item in NewsList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item\">
+                    <a class="nav-link" href="Introduce.php" id="navbarIntroduce">
+                        系所簡介
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarIntroduce">
+                        <todo-item v-for="item in IntroduceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Course.php" id="navbarCourse">
+                        課程資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarCourse">
+                        <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Enrollment.php" id="navbarEnrollment">
+                        招生資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarEnrollment">
+                        <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Download.php" id="navbarDownload">
+                        法令/表單
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDownload">
+                        <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Student.php" id="navbarStudent">
+                        學生資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarStudent">
+                        <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Source.php" id="navbarResource">
+                        網路資源
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarResource">
+                        <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        IEET
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-calm my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div><!--.collapse navbar-collapse-->
+        <script>
+            Vue.component('todo-item', {
+                props: ['todo'],
+                template: '<a class="dropdown-item" href="#">{{ todo.navTitle }}</a>'
+            })
+            new Vue({
+                el: '#navbarSupportedContent',
+                data: {
+                    NewsList: [
+                        { id: 0, navTitle: '活動與演講'},
+                        { id: 0, navTitle: '徵才訊息'},
+                        { id: 0, navTitle: '招生訊息'},
+                        { id: 0, navTitle: '獎學金訊息'},
+                        { id: 0, navTitle: '其他訊息'}
+                    ],
+                    IntroduceList: [
+                        { id: 0, navTitle: '系所歷史' },
+                        { id: 0, navTitle: '成員介紹' },
+                        { id: 0, navTitle: '榮譽獎項' },
+                        { id: 0, navTitle: '實驗室' },
+                        { id: 0, navTitle: '未來發展' },
+                        { id: 0, navTitle: '系所位置' }
+                    ],
+                    CourseList: [
+                        { id: 0, navTitle: '學士班課程架構' },
+                        { id: 0, navTitle: '碩士班課程架構' }
+                    ],
+                    EnrollmentList: [
+                        { id: 0, navTitle: '學士班' },
+                        { id: 0, navTitle: '碩士班' },
+                        { id: 0, navTitle: '中國學生' },
+                        { id: 0, navTitle: '國際交換生' },
+                        { id: 0, navTitle: '常見問題' }
+                    ],
+                    DownloadList: [
+                        { id: 0, navTitle: '作業程序' },
+                        { id: 0, navTitle: '教師專用' },
+                        { id: 0, navTitle: '學生相關' },
+                        { id: 0, navTitle: '其他表單' }
+                    ],
+                    StudentList: [
+                        { id: 0, navTitle: '學生論文' },
+                        { id: 0, navTitle: '系學會' },
+                        { id: 0, navTitle: '獎助學金' },
+                        { id: 0, navTitle: '證照成果' },
+                        { id: 0, navTitle: '系友專區' }
+                    ],
+                    ResourceList: [
+                        { id: 0, navTitle: '校內資源' },
+                        { id: 0, navTitle: '校外資源' },
+                        { id: 0, navTitle: '相關組織' },
+                        { id: 0, navTitle: '學術網路' },
+                        { id: 0, navTitle: '其他資源' }
+                    ]
+                }
+            })
+        </script>
+    </nav>
+    <!-- underside Navbar -->
+</div>
+<!-- /.Big Brand -->
+
 <!-- /.Navbar -->
