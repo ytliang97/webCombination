@@ -1,14 +1,15 @@
 # webCombination
 
-不確定這樣子組合你方不方便，希望能麻煩你看一下，跟我說怎麼改比較好(我知道現在這樣還很醜，抱歉...)
 
 目前找到能改進的地方有：
 
 + 繼續調整背景或找背景顏色讓他們不會太過奇怪
-+ 還有每個網頁內容跟carousel的距離我會調整
-+ 加入javascript控制submenu與subpage的對應
-+ 暫時還不知道怎麼調整submenu歪一邊的問題
-
+	+ 背景顏色的調整
+	+ footer的寬窄
++ 還有每個網頁內容跟carousel的距離我會調整(+)
++ 加入javascript控制submenu與subpage的對應(+)
++ 暫時還不知道怎麼調整submenu歪一邊的問題(+)
++ 首頁快速通道的內容決定
 
 整個repo結構為
 
